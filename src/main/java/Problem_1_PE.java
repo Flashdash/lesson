@@ -1,23 +1,12 @@
 public class Problem_1_PE {
+	public static int sum(int start, int end, int inc) {
+		int sum = 0;
+		for (int i = start; i < end; i += inc)
+			sum += i;
+		return sum;
+	}
+
 	public static void main(String[] args) {
-		int a = 0;
-		int b = 0;
-		int c = 0;
-		int i;
-		{
-
-			for (i = 3; i < 1000; i += 3)
-				a += i;
-
-			for (i = 5; i < 1000; i += 5)
-				b += i;
-
-			for (i = 15; i < 1000; i += 15)
-				c += i;
-
-			int Sum = a + b - c;
-
-			System.out.println(Sum);
-		}
+		System.out.println(sum(3, 1000, 3) + sum(5, 1000, 5) - sum(15, 1000, 15));
 	}
 }
