@@ -34,20 +34,9 @@ public class Euler {
         int res = 0;
         for(int i = 1; i<=n; i++)
         {
-            for(int k=1; k<=n; k++)
+            for(int k=1; k		<=n; k++)
                 res+=sumDiv(i*k);
         }
         return res;
     }
-    
-    
-    public static void main(String[] args)
-    {
-        //int s = sumMult(3) + sumMult(5) - sumMult(3*5);
-        //System.out.println(s);
-
-        int s1 = sumSumDiv(1000)%1000000000;
-        System.out.println(s1);
-    }
-
 }
