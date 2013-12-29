@@ -1,4 +1,4 @@
-public class Problem_25_PE {
+public class Problem_2_PE {
 
 	public static void fib() {
 		int fold = 1;
