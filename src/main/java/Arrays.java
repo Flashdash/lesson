@@ -1,15 +1,16 @@
 public class Arrays {
-	public static void ArrayFormat(int input[]) {
-		System.out.print("(");
+	public static String arrayFormat(int input[]) {
+		String x = "(";
 		for (int i = 0; i < input.length - 1; i++) {
-			System.out.print(input[i] + ", ");
+			x += (input[i] + ", ");
 		}
-		System.out.print(input[input.length - 1]);
-		System.out.print(")");
+		x += (input[input.length - 1]);
+		x += (")");
+		return x;
 	}
 
 	public static void main(String[] args) {
 		int input[] = { 2, 4, 38, 91, 9 };
-		ArrayFormat(input);
+		System.out.println (arrayFormat(input));
 	}
 }
